@@ -1,0 +1,16 @@
+body {
+    background: grey;
+}
+
+
+.header {
+    background-color: lightgreen;
+}
+
+.sidebar {
+    background-color: red;
+}
+
+.main-content {
+    background-color: blueviolet;
+}
