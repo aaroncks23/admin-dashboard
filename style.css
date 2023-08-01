@@ -13,13 +13,20 @@ main {
 .header {
     background-color: rebeccapurple;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .sidebar {
     background-color: saddlebrown;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
 }
 
 .main-content {
     background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
