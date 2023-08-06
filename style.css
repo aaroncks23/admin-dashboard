@@ -1,13 +1,15 @@
 body {
-    background: whitesmoke;
     margin: 0;
 }
 
 main {
     display: grid;
-    height: 100vw;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px;
+}
+
+h1 {
+    font-size: 25px;
 }
 
 .user-pic-small {
@@ -25,12 +27,16 @@ main {
 }
 
 .header {
+    position: relative;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr 2fr;
     padding-left: 20px;
     padding-top: 15px;
+    box-shadow: 0 5px 5px 0 #b9b9b9;
+    z-index: 0;
+    min-width: 550px;
 }
 
 .search img {
@@ -81,10 +87,13 @@ input {
 }
 
 .buttons {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    justify-content: right;
+    margin-right: 15px;
+    ;
 }
 
 button {
@@ -121,28 +130,25 @@ button {
     width: 40px;
 }
 
-.branding h1 {
-    font-size: 25px;
-}
-
 .navigation {
     margin-left: 10px;
 }
 
-.navigation > div:first-child {
+.navigation>div:first-child {
     margin-bottom: 40px;
 }
 
-.navigation div > div {
+.navigation>div>div {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
 }
 
 .main-content {
-    background-color: blueviolet;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    background-color: #e7e7e7;
 }
 
 img {
@@ -155,4 +161,48 @@ img {
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 20px;
     column-gap: 20px;
+    margin-right: 20px;
+}
+
+.projects>div {
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: transparent;
+    box-shadow: 2px 2px 0.5px 0.5px #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-actions {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 0.5px 0.5px #ccc;
+}
+
+.announcements div:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.trending {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 0.5px 0.5px #ccc;
+}
+
+.trending>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
