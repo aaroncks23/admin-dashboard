@@ -14,8 +14,22 @@ main {
     background-color: rebeccapurple;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.search img {
+    vertical-align: middle;
+}
+
+input {
+    border-radius: 10px;
+    border: transparent;
+    background-color: lightgrey;
+    width: 80%;
+    font-size: 18px;
 }
 
 .sidebar {
