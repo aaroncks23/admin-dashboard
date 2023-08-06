@@ -1,5 +1,6 @@
 body {
     background: grey;
+    margin: 0;
 }
 
 main {
@@ -9,13 +10,25 @@ main {
     grid-template-rows: 1fr 4fr;
 }
 
+.user-pic-small {
+    height: 35px;
+    width: auto;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.user-pic-large {
+    height: 60px;
+    width: auto;
+    background-color: red;
+    border-radius: 100%;
+}
 
 .header {
-    background-color: rebeccapurple;
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 2fr;
     padding-left: 20px;
     padding-top: 15px;
 }
@@ -30,6 +43,57 @@ input {
     background-color: lightgrey;
     width: 80%;
     font-size: 18px;
+    margin-top: 6px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: right;
+    margin-right: 15px;
+}
+
+.user-info div {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-greeting {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.user-greeting div {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 10px;
+    line-height: 50%;
+}
+
+.user-greeting p:first-child {
+    font-size: 12px;
+}
+
+.user-greeting p:last-child {
+    font-size: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    height: 25px;
+    width: 70px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(0, 21, 255);
+    color: whitesmoke;
 }
 
 .sidebar {
